@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap.css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+</head>
+</head>
+<body>
+
+
+<section class="py-5">
+    <h1 class="section-title text-center text-secondary mb-5">数据库</h1>
+    <div style="text-align:center" class="center">
+        <table border="1" class="center" align="center">
+            <thead>
+            <tr>
+                <th>项目</th>
+                <th>编码</th>
+                <th>货物和劳务名称</th>
+                <th>商品和服务分类简称</th>
+
+            </tr>
+            </thead>
+            <tbody>
+            {% for row in data %}
+            <tr>
+                <td>{{ row.item}}</td>
+                <td>{{ row.itemCode }}</td>
+                <td>{{ row.itemFirstCategory }}</td>
+                <td>{{ row.itemSecondCategory}}</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</section>
+</body>
+</html>

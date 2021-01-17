@@ -1,6 +1,9 @@
 
 # 增值税税收分类编码自动匹配模型 
 
+- Develop VAT classification code automatic matching system (Given a random product name, the system will output the matching/recommend VAT code)
+- Skills used: NLP(Python Sklearn), web crawler(crawling Taobao), server deployment(AWS ubuntu), web application(Django)
+
 ### 1. 数据简介
 
 - 商品和服务税收分类编码表.xls中共有409大类，4205小类
